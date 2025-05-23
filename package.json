@@ -1,0 +1,31 @@
+{
+  "name": "@pardnchiu/nodejs-extension",
+  "version": "0.3.2",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "dist",
+    "index.js",
+    "index.d.ts",
+    "package.json",
+    "tsconfig.json"
+  ],
+  "exports": {
+    ".": {
+      "require": "./index.js",
+      "types": "./index.d.ts"
+    }
+  },
+  "dependencies": {
+    "mongodb": "^5.4.0",
+    "mysql2": "^3.2.0",
+    "redis": "3.1.2",
+    "nodemailer": "^6.9.7"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.21"
+  }
+}
